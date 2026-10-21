@@ -1,0 +1,53 @@
+<div
+	*ngIf="!multiple"
+	class="select-box single"
+	[ngStyle]="getSelectStyles()"
+	(click)="toggleList($event)"
+	[ngClass]="{ 'disabled': disabled, 'selected': selected, 'opened': opened }"
+	(keydown)="arrowClick($event)"
+	(keydown.enter)="selectItem()"
+>
+	<div class="placeholder" *ngIf="!selected">{{ placeholder }}</div>
+  <div class="value">{{ selectedOption.label }}</div>
+	<div class="icon" *ngIf="allowClear && selected" (click)="clearOption($event)"><i class="icofont-close-line"></i></div>
+	<div class="icon" [ngClass]="{'active': opened }"><i class="icofont-thin-down"></i> </div>
+</div>
+
+<div
+	*ngIf="multiple"
+	class="select-box multiple"
+	(click)="toggleList($event)"
+	[ngClass]="{ 'disabled': disabled }"
+	[ngStyle]="getSelectStyles()"
+>
+	<div class="placeholder" *ngIf="showMultiplePlaceholder()">{{ placeholder }}</div>
+	<div class="value">
+	  <div class="selected-option" *ngFor="let option of selectedOptions">
+	    <i (click)="clearOption($event, option)" class="icofont-close-line"></i>
+	  	<div class="option-text">{{ option.label }}</div>
+	  </div>
+	</div>
+	<div class="icon" *ngIf="allowClear && selected" (click)="clearOption($event)"><i class="icofont-close-line"></i></div>
+	<div class="icon" [ngClass]="{ 'active': opened }"><i class="icofont-thin-down"></i></div>
+</div>
+
+<div class="select-dropdown" [@shrink]="opened ? 'active': 'inactive'" [ngStyle]="getListStyles()">
+	<div class="not-found" *ngIf="!options">{{ notFoundMsg }}</div>
+
+	<div class="filter" *ngIf="filter">
+		<tc-input (keyup)="onkeypress($event)" [formControl]="filterForm"></tc-input>
+	</div>
+
+	<div class="options">
+		<div
+			class="option"
+      [ngClass]="{ 'selected': optionSelected(option) }"
+			*ngFor="let option of getOptions(); let i = i"
+			[ngClass]="{ 'hovered': arrowKeyLocation === i }"
+			[ngStyle]="getOptionsStyle(optionSelected(option))"
+			(click)="optionClick($event, option, optionSelected(option))"
+		>
+			{{ option.label }}
+		</div>
+	</div>
+</div>

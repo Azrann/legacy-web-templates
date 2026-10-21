@@ -1,0 +1,174 @@
+<div class="row">
+	<div class="col-12">
+		<tc-card [title]="'Single select'">
+			<tc-form-group>
+				<tc-select [placeholder]="'Default single select'" [options]="data"></tc-select>
+			</tc-form-group>
+
+      <tc-form-group *ngIf="data">
+        <tc-select [placeholder]="'Selected option'" [options]="data" [selectedValue]="0"></tc-select>
+      </tc-form-group>
+
+			<tc-form-group>
+				<tc-select [allowClear]="true" [placeholder]="'With clear button'" [options]="data"></tc-select>
+			</tc-form-group>
+
+			<tc-form-group class="mb-0">
+				<tc-select [filter]="true" [placeholder]="'With options filter'" [options]="data"></tc-select>
+			</tc-form-group>
+		</tc-card>
+	</div>
+
+	<div class="col-12 col-sm-6">
+		<tc-card [title]="'Single select color variations'">
+			<tc-form-group>
+				<tc-select
+					[color]="'#678cf9'"
+					[borderColor]="['#678cf9', '#4774f7', '#2a5ef7']"
+					[bgColor]="['rgba(103,140,249, 0.1)', 'rgba(103,140,249, 0.2)','rgba(103,140,249, 0.3)']"
+					[placeholder]="'Custom input style'"
+					[options]="data"
+				></tc-select>
+			</tc-form-group>
+
+			<tc-form-group>
+				<tc-select
+					[listBgColor]="'#64b5f6'"
+					[listColor]="'#fff'"
+					[listBorderColor]="'#64b5f6'"
+					[placeholder]="'Custom list style'"
+					[options]="data"
+				></tc-select>
+			</tc-form-group>
+
+			<tc-form-group class="mb-0">
+				<tc-select
+					[listHighlightBgColor]="'#f00'"
+					[listHighlightTextColor]="'#678cf9'"
+					[placeholder]="'Custom list item style'"
+					[options]="data"
+				></tc-select>
+			</tc-form-group>
+		</tc-card>
+	</div>
+
+	<div class="col-12 col-sm-6">
+		<tc-card [title]="'Single select shape variations'">
+			<tc-form-group>
+				<tc-select [placeholder]="'Default shape'" [options]="data"></tc-select>
+			</tc-form-group>
+			<tc-form-group>
+				<tc-select [shape]="10" [placeholder]="'10px Rounded Shape'" [options]="data"></tc-select>
+			</tc-form-group>
+			<tc-form-group class="mb-0">
+				<tc-select [shape]="25" [placeholder]="'25px Rounded Shape'" [options]="data"></tc-select>
+			</tc-form-group>
+		</tc-card>
+	</div>
+
+	<div class="col-12">
+		<tc-card [title]="'Multiple select'">
+			<tc-form-group>
+				<tc-select [multiple]="true" [placeholder]="'Default multi select'" [options]="data"></tc-select>
+			</tc-form-group>
+
+			<tc-form-group>
+				<tc-select [multiple]="true" [filter]="true" [placeholder]="'With options filter'" [options]="data"></tc-select>
+			</tc-form-group>
+
+			<tc-form-group class="mb-0">
+				<tc-select
+					[multiple]="true"
+					[allowClear]="true"
+					[placeholder]="'With clear button'"
+					[options]="data"
+				></tc-select>
+			</tc-form-group>
+		</tc-card>
+	</div>
+
+	<div class="col-12 col-sm-6">
+		<tc-card [title]="'Multi select color variations'">
+      <tc-form-group>
+        <tc-select
+          [multiple]="true"
+					[color]="'#678cf9'"
+					[borderColor]="['#678cf9', '#4774f7', '#2a5ef7']"
+					[bgColor]="['rgba(103,140,249, 0.1)', 'rgba(103,140,249, 0.2)','rgba(103,140,249, 0.3)']"
+					[placeholder]="'Custom input style'"
+          [options]="data"
+        ></tc-select>
+			</tc-form-group>
+			<tc-form-group>
+				<tc-select
+				 	[multiple]="true"
+					[listBgColor]="'#64b5f6'"
+					[listColor]="'#fff'"
+					[listBorderColor]="'#64b5f6'"
+					[placeholder]="'Custom list style'"
+					[options]="data"
+				></tc-select>
+			</tc-form-group>
+			<tc-form-group class="mb-0">
+				<tc-select
+					[multiple]="true"
+					[listHighlightBgColor]="'#f00'"
+					[listHighlightTextColor]="'#678cf9'"
+					[placeholder]="'Custom list item style'"
+					[options]="data"
+				></tc-select>
+			</tc-form-group>
+		</tc-card>
+	</div>
+
+	<div class="col-12 col-sm-6">
+		<tc-card [title]="'Multi select shape variations'">
+			<tc-form-group>
+				<tc-select [multiple]="true" [placeholder]="'Default shape'" [options]="data"></tc-select>
+			</tc-form-group>
+			<tc-form-group>
+				<tc-select [multiple]="true" [shape]="10" [placeholder]="'10px Rounded Shape'" [options]="data"></tc-select>
+			</tc-form-group>
+			<tc-form-group class="mb-0">
+				<tc-select [multiple]="true" [shape]="25" [placeholder]="'25px Rounded Shape'" [options]="data"></tc-select>
+			</tc-form-group>
+		</tc-card>
+	</div>
+
+	<div class="col-12">
+		<tc-card [title]="'Connect value to input'">
+			<tc-form-group>
+				<tc-select #select1 [placeholder]="'Default single select'" [options]="data"></tc-select>
+			</tc-form-group>
+
+			<tc-form-group>
+				<tc-input [readonly]="true" [placeholder]="'Single select value'" [(ngModel)]="select1.value"></tc-input>
+			</tc-form-group>
+
+			<tc-form-group>
+				<tc-select #select2 [multiple]="true" [placeholder]="'Default multi select'" [options]="data"></tc-select>
+			</tc-form-group>
+
+			<tc-form-group class="mb-0">
+				<div  class="row">
+					<div class="col-3" *ngFor="let value of select2.value; let i = index">
+						<tc-form-group>
+							<tc-input [readonly]="true" *ngIf="value" [innerValue]="value"></tc-input>
+						</tc-form-group>
+					</div>
+				</div>
+			</tc-form-group>
+		</tc-card>
+	</div>
+
+	<div class="col-12">
+		<tc-card [title]="'Disabled Selects'" class="mb-0">
+			<tc-form-group>
+				<tc-select [disabled]="true" [placeholder]="'Disable Single Select'" [options]="data"></tc-select>
+			</tc-form-group>
+			<tc-form-group class="mb-0">
+				<tc-select [disabled]="true" [multiple]="true" [placeholder]="'Disable Single Select'" [options]="data"></tc-select>
+			</tc-form-group>
+		</tc-card>
+	</div>
+</div>

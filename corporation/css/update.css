@@ -1,0 +1,333 @@
+.inner {
+    padding-top: 64px;
+}
+
+#sslides {
+    background-color: #1a1a1a;
+    color: #fff;  
+}
+
+.breaker {
+    clear: both;
+}
+
+.qtitle {
+    padding: 15px;
+    font-size: 60px;
+    background-color: #ab2121;
+    width: 290px;
+    margin: 80px auto 0px;
+    font-family: 'qompatBold';
+}
+
+.qsubtitle {
+    font-size: 20px;
+    padding: 20px 0px 30px 0px;
+    text-transform: uppercase;
+}
+
+.infoCircleContainer {
+    position: relative;
+    width: 600px;
+    margin: 0px auto;
+    color: #dadada;
+}
+
+.homeBanner img {
+    width: 100%;
+    max-width: 570px;
+
+    cursor: pointer;
+    margin: 50px 0 50px;
+}
+
+.infoCircle {
+    float: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    height: 170px;
+    width: 170px;
+    transition: all 200ms ease-in;
+}
+
+    .infoCircle:first-child {
+        margin-left: 40px;
+    }
+
+    .infoCircle.assess:hover ,.infoCircle.assess:focus{
+        background-image: url(/images/update/Q_Spot_Assess.png);
+    }
+
+    .infoCircle.remediate:hover,.infoCircle.remediate:focus {
+        background-image: url(/images/update/Q_Spot_Remediate.png);
+    }
+
+    .infoCircle.convert:hover ,.infoCircle.convert:focus{
+        background-image: url(/images/update/Q_Spot_Convert.png);
+    }
+
+div.infoCircle {
+    background-image: url(/images/update/Q_Spot_Blank.png);
+    outline: 0;
+}
+
+.infoCircle {
+    margin-right: 10px;
+}
+
+    .infoCircle div {
+         display: block;
+        
+    }
+
+    .infoCircle:hover div,  .infoCircle:focus div{
+       display: none;
+    }
+
+    .infoCircle .title {
+        color: #00bb49;
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 25px;
+        margin-bottom: 5px;
+    }
+
+    .infoCircle .contents div {
+        font-size: 14px;
+    }
+
+.discoverhow {
+    font-size: 14px;
+    padding-top: 4px;
+    font-weight: bolder;
+}
+
+.green {
+    color: #00bb49;
+}
+
+#signUpForm {
+    padding-bottom: 20px;
+}
+.subscribetextbox {
+    border: 1px solid #888;
+    background: none;
+    color: #aaa;
+    outline: none;
+    padding: 0px 4px;
+    width: 126px;
+}
+
+.arrowButton {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    background-image: url(/images/Q_AME_arrow.png);
+    background-position-y: middle;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    padding-left: 25px;
+    padding-right: 0;
+    margin-left: 0px;
+    z-index: 10;
+    line-height: 22px;
+    font-weight: bolder;
+}
+
+.homeline3 {
+    width: 190px;
+    float: left;
+    margin: 10px;
+    font-size: 13px;
+}
+
+.lema {
+    font-size: 16px;
+    padding: 10px 30px;
+}
+
+.homeline3 {
+    text-align: left;
+}
+
+    .homeline3.contactbuttons {
+        text-align: center;
+        width: 160px;
+    }
+
+.contactbuttons a {
+    margin: 0px 5px;
+}
+
+.subcolored {
+    font-size: 22px;
+    color: #333;
+}
+
+.medtopmargin {
+    margin-top: 20px;
+}
+
+.littopmargin {
+    margin-top: 10px;
+}
+
+.betaimg {
+    width: 100%;
+    min-width: 260px;
+    max-width: 500px;
+    margin-top: 6px;
+}
+
+.lefttitle {
+    text-align: left;
+}
+
+.betaicons {
+    margin-top: 10px;
+}
+
+    .betaicons td {
+        width: 20%;
+    }
+
+    .betaicons td {
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+.about-box {
+    min-height: 290px;
+}
+
+.member-name {
+    font-size: 26px;
+    padding-top: 0px;
+}
+
+.member-image {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.biobutton {
+    background-size: 28px;
+    width: 28px;
+    height: 28px;
+    margin-right: 4px;
+    float: left;
+}
+
+.bb-amazon {
+    background-image: url(/images/update/Q_Bios-Icon_Amazon.png);
+}
+
+.bb-blog {
+    background-image: url(/images/update/Q_Bios-Icon_Rss.png);
+}
+
+.bb-linkedin {
+    background-image: url(/images/update/Q_LinkedIn.png);
+}
+
+.bb-toolkit {
+    background-image: url(/images/update/Q_Bios-Icon_Blog.png);
+}
+
+.bb-twitter {
+    background-image: url(/images/update/Q_Bios-Icon_Twitter.png);
+}
+
+@media screen and (max-width: 992px) {
+        .qtitle {
+        margin-top: 20px;
+    }
+        
+        .lefttitle {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .text-3, .text-6 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.mvprld {
+    position: absolute;
+    opacity: 0.01;
+    left: 5000px;
+    background-image: url(/images/update/Q_Spot_Blank.png);
+}
+
+.team-members .member {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .qtitle {
+        margin-top: 20px;
+    }
+
+
+    .infoCircleContainer {
+        width: 300px;
+        /*background: green;*/
+    }
+
+    .infoCircle, .infoCircle:first-child {
+        margin-left: 0px;
+        margin-right: 4px;
+        width: 96px;
+        min-height: 96px;
+        height: auto;
+    }
+
+    .infoCircle .title {
+        margin-top: 36px;
+        margin-bottom: 38px;
+    }
+
+    .infoCircle .contents div {
+        font-size: 12px;
+    }
+
+    .lema {
+        padding: 0;
+    }
+
+        .homeBanner img {
+            margin: 20px 0 8px;
+        }
+
+        .homeline3 {
+            margin: 10px 0;
+            width: 100%;
+        }
+
+        .homeline3.contactbuttons {
+            text-align: right;
+            width: 100%;
+        }
+}
+
+@media screen and (max-width: 320px) {
+    .infoCircleContainer {
+        width: 264px;
+        /*background: green;*/
+    }
+
+        .infoCircle, .infoCircle:first-child {
+        width: 82px;
+    }
+
+            .infoCircle .title {
+                margin-top: 32px;
+                font-size: 13px;
+            }
+}

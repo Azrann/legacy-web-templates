@@ -1,0 +1,68 @@
+<div class="row">
+	<div class="col-12 col-md-6">
+		<tc-card [title]="'Basic'">
+      <tc-autocomplete [data]="data" [key]="'country'" [placeholder]="'Type country\'s name'"></tc-autocomplete>
+		</tc-card>
+	</div>
+
+  <div class="col-12 col-md-6">
+    <tc-card [title]="'Rounded'">
+      <tc-autocomplete
+				[data]="data"
+				[key]="'country'"
+				[placeholder]="'Type country\'s name'"
+				[tcShape]="20"
+			></tc-autocomplete>
+    </tc-card>
+  </div>
+
+	<div class="col-12 col-md-6">
+		<tc-card [title]="'Custom input style'">
+      <tc-autocomplete
+        [bgColor]="['#020e1b', '#093663', '#fff']"
+        [borderColor]="['#020e1b', '#093663', '#020e1b']"
+        [color]="['#fff', '#fff', '#000']"
+        [innerValue]="'United States'"
+        [placeholder]="'Type country\'s name'"
+        [data]="data"
+        [key]="'country'"
+      ></tc-autocomplete>
+		</tc-card>
+	</div>
+
+  <div class="col-12 col-md-6">
+    <tc-card [title]="'Custom list color'">
+      <tc-autocomplete
+				[listColor]="'#90aebd'"
+				[placeholder]="'Type country\'s name'"
+				[data]="data"
+				[key]="'country'"
+			></tc-autocomplete>
+    </tc-card>
+  </div>
+
+	<div class="col-12 col-md-6">
+		<tc-card [title]="'Custom list accent color'" class="mb-md-0">
+      <tc-autocomplete
+				[listAccentColor]="'#bd6e95'"
+				[placeholder]="'Type country\'s name'"
+				[data]="data"
+				[key]="'country'"
+			></tc-autocomplete>
+		</tc-card>
+	</div>
+
+	<div class="col-12 col-md-6">
+		<tc-card [title]="'Custom list background color'" class="mb-0">
+      <tc-autocomplete
+				[listBg]="'#fff'"
+				[listColor]="'#093663'"
+				[placeholder]="'Type country\'s name'"
+				[data]="data"
+				[key]="'country'"
+			></tc-autocomplete>
+		</tc-card>
+	</div>
+</div>
+
+

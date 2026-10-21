@@ -1,0 +1,200 @@
+
+@font-face {
+  font-family: 'qompatBold';
+  src: url('../fonts/Code-Bold.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../fonts/Code-Bold.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+#slides
+{
+	background-color: #1a1a1a;
+	color:#fdfffe;
+	font-size: 12px;
+	position: absolute;
+	top:0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+#events
+{
+	background-color: #EFEFEF;
+}
+#home .home-details
+{
+}
+
+.home-center-colum
+{
+	max-width: 500px;
+}
+
+.events-center-colum
+{
+	max-width: 700px;
+	margin:auto;
+}
+
+.events-desc
+{
+	font-weight: 100;
+	/* text-align: center; */
+	margin: 5px auto;
+	line-height: 24px;
+}
+
+.events-arrow-col
+{
+	vertical-align: -4px;
+}
+
+.text-1
+{
+	padding: 15px;
+	font-size: 60px;
+	background-color: #ab2121;
+	width: 290px;
+	margin: auto;
+	font-family: 'qompatBold';
+}
+
+.text-2
+{
+	font-size: 20px;
+	padding: 10px 0px 10px 0px;
+	text-transform: uppercase;
+}
+
+.text-3
+{
+	font-size: 20px;
+	padding: 10px 0px 10px 0px;
+}
+
+.text-4
+{
+	font-size: 16px;
+	padding: 10px 0px 10px 0px;
+	line-height: 26px;
+}
+
+.text-5
+{
+	font-size: 12px;
+	padding: 10px 0px 10px 0px;
+	line-height: 18px;
+}
+
+.text-6
+{
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.margin-top-xxs
+{
+	margin-top: 15px;
+}
+
+.margin-top-xs
+{
+	margin-top: 30px;
+}
+
+.margin-top-sm
+{
+	margin-top: 60px;
+}
+
+.margin-top-md
+{
+	margin-top: 90px;
+}
+
+.social-link a
+{
+	padding: 0px 5px;
+}
+
+a#compat-email
+{
+	color: #00bb49;	
+}
+
+.arrow-col
+{
+	padding-left: 38px;
+	background: url('../images/Q_AME_arrow.png') no-repeat;
+	text-align: left;
+	min-height: 32px;
+	display: inline-block;
+}
+.arrow-col.red
+{
+	background: url('../images/Q_AME_arrow-Red.png') no-repeat;
+	color:#ab2121;
+}
+
+.cancel-btn
+{
+	display:inline-block;
+	text-align: left;
+	margin-left: 15px;
+}
+
+.cancel-btn span
+{
+	vertical-align: -4px;
+	color: #ab2121;
+}
+
+.cancel-btn:hover
+{
+	cursor: pointer;
+}
+
+.arrow-col .arrow-md
+{
+	max-width: 100px;
+}
+
+.arrow-col:hover
+{
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+    .padding-bottom {
+        padding-bottom: 25px;
+    }
+}
+@media only screen and (max-width: 768px)
+{
+	.col-xs-4 {
+		width: 32%;
+	}
+
+	.margin-top-xs
+	{
+		margin-top: 10px;
+	}
+
+	.margin-top-sm
+	{
+		margin-top: 20px;
+	}
+
+	.margin-top-md
+	{
+		margin-top: 30px;
+	}
+}
+
+.alert-messages {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  z-index: 7000;
+}

@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AEC223FC-6268-4657-A6EF-24B8541D340B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>corporation</RootNamespace>
+    <AssemblyName>corporation</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="cgi-bin\desktop.ini" />
+    <Content Include="css\.DS_Store" />
+    <Content Include="css\colors\.DS_Store" />
+    <Content Include="css\colors\desktop.ini" />
+    <Content Include="css\desktop.ini" />
+    <Content Include="css\fonts\.DS_Store" />
+    <Content Include="css\fonts\desktop.ini" />
+    <Content Include="css\fonts\flexslider-icon.eot" />
+    <Content Include="css\fonts\flexslider-icon.ttf" />
+    <Content Include="css\fonts\flexslider-icon.woff" />
+    <Content Include="css\images\.DS_Store" />
+    <Content Include="css\images\desktop.ini" />
+    <Content Include="css\images\Thumbs.db" />
+    <Content Include="css\player\.DS_Store" />
+    <Content Include="css\player\desktop.ini" />
+    <Content Include="css\player\ytp-regular.eot" />
+    <Content Include="css\player\ytp-regular.ttf" />
+    <Content Include="css\player\ytp-regular.woff" />
+    <Content Include="Events\AME2014\Rise-and-Fall-and-Rise-of-Virtualization-AME2014.pdf" />
+    <Content Include="fonts\.DS_Store" />
+    <Content Include="fonts\Code-Bold.ttf" />
+    <Content Include="fonts\Code-Bold.woff" />
+    <Content Include="fonts\CODE_Bold.otf" />
+    <Content Include="fonts\desktop.ini" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="hostingstart.html.old" />
+    <Content Include="icons\desktop.ini" />
+    <Content Include="images\.DS_Store" />
+    <Content Include="images\blog\.DS_Store" />
+    <Content Include="images\blog\desktop.ini" />
+    <Content Include="images\blog\Thumbs.db" />
+    <Content Include="images\desktop.ini" />
+    <Content Include="images\history\.DS_Store" />
+    <Content Include="images\history\desktop.ini" />
+    <Content Include="images\history\Thumbs.db" />
+    <Content Include="images\portfolio\.DS_Store" />
+    <Content Include="images\portfolio\desktop.ini" />
+    <Content Include="images\portfolio\Thumbs.db" />
+    <Content Include="images\prettyPhoto\.DS_Store" />
+    <Content Include="images\prettyPhoto\dark_rounded\desktop.ini" />
+    <Content Include="images\prettyPhoto\dark_rounded\Thumbs.db" />
+    <Content Include="images\prettyPhoto\dark_square\desktop.ini" />
+    <Content Include="images\prettyPhoto\default\desktop.ini" />
+    <Content Include="images\prettyPhoto\desktop.ini" />
+    <Content Include="images\prettyPhoto\facebook\desktop.ini" />
+    <Content Include="images\prettyPhoto\light_rounded\desktop.ini" />
+    <Content Include="images\prettyPhoto\light_square\desktop.ini" />
+    <Content Include="images\tables\.DS_Store" />
+    <Content Include="images\tables\desktop.ini" />
+    <Content Include="images\tables\Thumbs.db" />
+    <Content Include="images\team\.DS_Store" />
+    <Content Include="images\team\desktop.ini" />
+    <Content Include="images\team\Thumbs.db" />
+    <Content Include="images\Thumbs.db" />
+    <Content Include="images\update\Q_Bios-Icon_Amazon.png" />
+    <Content Include="images\update\Q_Bios-Icon_Blog.png" />
+    <Content Include="images\update\Q_Bios-Icon_LinkedIn.png" />
+    <Content Include="images\update\Q_Bios-Icon_RSS.png" />
+    <Content Include="images\update\Q_Bios-Icon_Twitter.png" />
+    <Content Include="js\.DS_Store" />
+    <Content Include="js\desktop.ini" />
+    <Content Include="js\update.js" />
+    <Content Include="php\.DS_Store" />
+    <Content Include="php\class.phpmailer.php" />
+    <Content Include="php\class.smtp.php" />
+    <Content Include="php\desktop.ini" />
+    <Content Include="php\error_log" />
+    <Content Include="php\language\desktop.ini" />
+    <Content Include="php\language\phpmailer.lang-br.php" />
+    <Content Include="php\language\phpmailer.lang-cz.php" />
+    <Content Include="php\language\phpmailer.lang-de.php" />
+    <Content Include="php\language\phpmailer.lang-en.php" />
+    <Content Include="php\language\phpmailer.lang-es.php" />
+    <Content Include="php\language\phpmailer.lang-fr.php" />
+    <Content Include="php\language\phpmailer.lang-it.php" />
+    <Content Include="php\language\phpmailer.lang-nl.php" />
+    <Content Include="php\language\phpmailer.lang-no.php" />
+    <Content Include="php\language\phpmailer.lang-se.php" />
+    <Content Include="php\language\phpmailer.lang-tr.php" />
+    <Content Include="php\mail.php" />
+    <Content Include="php\newsletter.php" />
+    <Content Include="projects\.DS_Store" />
+    <Content Include="projects\desktop.ini" />
+    <Content Include="theme-panel\.DS_Store" />
+    <Content Include="theme-panel\desktop.ini" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\animate.min.css" />
+    <Content Include="css\base.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\colors\asphalt.css" />
+    <Content Include="css\colors\blue.css" />
+    <Content Include="css\colors\fuschia.css" />
+    <Content Include="css\colors\gray.css" />
+    <Content Include="css\colors\green.css" />
+    <Content Include="css\colors\offblack.css" />
+    <Content Include="css\colors\orange.css" />
+    <Content Include="css\colors\purple.css" />
+    <Content Include="css\colors\red.css" />
+    <Content Include="css\colors\s-blue.css" />
+    <Content Include="css\colors\s-green.css" />
+    <Content Include="css\colors\yellow.css" />
+    <Content Include="css\dark-style.css" />
+    <Content Include="css\flexslider.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\fonts\flexslider-icon.svg" />
+    <Content Include="css\gradients.css" />
+    <Content Include="css\images\bx_loader.gif" />
+    <Content Include="css\images\controls.png" />
+    <Content Include="css\isotope.css" />
+    <Content Include="css\jquery.bxslider.css" />
+    <Content Include="css\owl.carousel.css" />
+    <Content Include="css\player\bigvideo.css" />
+    <Content Include="css\player\bigvideo.png" />
+    <Content Include="css\player\YTPlayer.css" />
+    <Content Include="css\prettyPhoto.css" />
+    <Content Include="css\promo.css" />
+    <Content Include="css\reset.css" />
+    <Content Include="css\responsive.css" />
+    <Content Include="css\shortcodes.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\update.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="google8ead28f9dcffa13b.html" />
+    <Content Include="icons\BlogIcon32x32.jpg" />
+    <Content Include="icons\BlogIcon64x64.jpg" />
+    <Content Include="icons\FacebookIcon32x32.jpg" />
+    <Content Include="icons\FacebookIcon64x64.jpg" />
+    <Content Include="icons\GooglePlusIcon32x32.jpg" />
+    <Content Include="icons\GooglePlusIcon64x64.jpg" />
+    <Content Include="icons\icon building.jpg" />
+    <Content Include="icons\icon cog.jpg" />
+    <Content Include="icons\icon group.jpg" />
+    <Content Include="icons\icon list.jpg" />
+    <Content Include="icons\LinkedInIcon32x32.jpg" />
+    <Content Include="icons\LinkedInIcon64x64.jpg" />
+    <Content Include="icons\Social Media icons.jpg" />
+    <Content Include="icons\TwitterIcon32x32.jpg" />
+    <Content Include="icons\TwitterIcon64x64.jpg" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\animate.jpg" />
+    <Content Include="images\arrow-left.png" />
+    <Content Include="images\arrow-right.png" />
+    <Content Include="images\backtoschoolupdate-100413535-primary.idge.jpg" />
+    <Content Include="images\big-arrow-left.png" />
+    <Content Include="images\big-arrow-right.png" />
+    <Content Include="images\blog\1.jpg" />
+    <Content Include="images\blog\2.jpg" />
+    <Content Include="images\blog\3.jpg" />
+    <Content Include="images\blue-sky.jpg" />
+    <Content Include="images\bottom-arrow.png" />
+    <Content Include="images\bottom-strip.png" />
+    <Content Include="images\bridge.jpg" />
+    <Content Include="images\britishlibrary.jpg" />
+    <Content Include="images\bsod_patch_tuesday_June.jpg" />
+    <Content Include="images\chairs.jpg" />
+    <Content Include="images\december-patch-tuesday-100534865-primary.idge.jpg" />
+    <Content Include="images\EnterButton.png" />
+    <Content Include="images\favicon.png" />
+    <Content Include="images\flowers.jpg" />
+    <Content Include="images\history-strip.jpg" />
+    <Content Include="images\history\1.jpg" />
+    <Content Include="images\history\10.jpg" />
+    <Content Include="images\history\2.jpg" />
+    <Content Include="images\history\3.jpg" />
+    <Content Include="images\history\4.jpg" />
+    <Content Include="images\history\5.jpg" />
+    <Content Include="images\history\6.jpg" />
+    <Content Include="images\history\7.jpg" />
+    <Content Include="images\history\8.jpg" />
+    <Content Include="images\history\9.jpg" />
+    <Content Include="images\history\video.png" />
+    <Content Include="images\i1.jpg" />
+    <Content Include="images\i2.jpg" />
+    <Content Include="images\i3-dark.jpg" />
+    <Content Include="images\i3.jpg" />
+    <Content Include="images\i4-dark.jpg" />
+    <Content Include="images\i4.jpg" />
+    <Content Include="images\i5.jpg" />
+    <Content Include="images\iphone.png" />
+    <Content Include="images\jetty.jpg" />
+    <Content Include="images\li-item.png" />
+    <Content Include="images\logo-icon-m.png" />
+    <Content Include="images\logo-icon.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\mac.png" />
+    <Content Include="images\marker.png" />
+    <Content Include="images\microsoft_patch_tuesday_July2014.jpg" />
+    <Content Include="images\microsoft_patch_tuesday_May.jpg" />
+    <Content Include="images\pattern-black.png" />
+    <Content Include="images\pattern-grid.png" />
+    <Content Include="images\pattern-white.png" />
+    <Content Include="images\pattern.png" />
+    <Content Include="images\ph1.png" />
+    <Content Include="images\ph2.png" />
+    <Content Include="images\ph3.png" />
+    <Content Include="images\portfolio\1.jpg" />
+    <Content Include="images\portfolio\10.jpg" />
+    <Content Include="images\portfolio\2.jpg" />
+    <Content Include="images\portfolio\3.jpg" />
+    <Content Include="images\portfolio\4.jpg" />
+    <Content Include="images\portfolio\5.jpg" />
+    <Content Include="images\portfolio\6.jpg" />
+    <Content Include="images\portfolio\7.jpg" />
+    <Content Include="images\portfolio\8.jpg" />
+    <Content Include="images\portfolio\9.jpg" />
+    <Content Include="images\portfolio\slide1.jpg" />
+    <Content Include="images\portfolio\slide2.jpg" />
+    <Content Include="images\portfolio\slide3.jpg" />
+    <Content Include="images\portfolio\slide4.jpg" />
+    <Content Include="images\portfolio\slide5.jpg" />
+    <Content Include="images\positive-m.png" />
+    <Content Include="images\positive-s.png" />
+    <Content Include="images\positive.png" />
+    <Content Include="images\prettyPhoto\dark_rounded\btnNext.png" />
+    <Content Include="images\prettyPhoto\dark_rounded\btnPrevious.png" />
+    <Content Include="images\prettyPhoto\dark_rounded\contentPattern.png" />
+    <Content Include="images\prettyPhoto\dark_rounded\default_thumbnail.gif" />
+    <Content Include="images\prettyPhoto\dark_rounded\loader.gif" />
+    <Content Include="images\prettyPhoto\dark_rounded\sprite.png" />
+    <Content Include="images\prettyPhoto\dark_square\btnNext.png" />
+    <Content Include="images\prettyPhoto\dark_square\btnPrevious.png" />
+    <Content Include="images\prettyPhoto\dark_square\contentPattern.png" />
+    <Content Include="images\prettyPhoto\dark_square\default_thumbnail.gif" />
+    <Content Include="images\prettyPhoto\dark_square\loader.gif" />
+    <Content Include="images\prettyPhoto\dark_square\sprite.png" />
+    <Content Include="images\prettyPhoto\default\default_thumb.png" />
+    <Content Include="images\prettyPhoto\default\loader.gif" />
+    <Content Include="images\prettyPhoto\default\sprite.png" />
+    <Content Include="images\prettyPhoto\default\sprite_next.png" />
+    <Content Include="images\prettyPhoto\default\sprite_prev.png" />
+    <Content Include="images\prettyPhoto\default\sprite_x.png" />
+    <Content Include="images\prettyPhoto\default\sprite_y.png" />
+    <Content Include="images\prettyPhoto\facebook\btnNext.png" />
+    <Content Include="images\prettyPhoto\facebook\btnPrevious.png" />
+    <Content Include="images\prettyPhoto\facebook\contentPatternBottom.png" />
+    <Content Include="images\prettyPhoto\facebook\contentPatternLeft.png" />
+    <Content Include="images\prettyPhoto\facebook\contentPatternRight.png" />
+    <Content Include="images\prettyPhoto\facebook\contentPatternTop.png" />
+    <Content Include="images\prettyPhoto\facebook\default_thumbnail.gif" />
+    <Content Include="images\prettyPhoto\facebook\loader.gif" />
+    <Content Include="images\prettyPhoto\facebook\sprite.png" />
+    <Content Include="images\prettyPhoto\light_rounded\btnNext.png" />
+    <Content Include="images\prettyPhoto\light_rounded\btnPrevious.png" />
+    <Content Include="images\prettyPhoto\light_rounded\default_thumbnail.gif" />
+    <Content Include="images\prettyPhoto\light_rounded\loader.gif" />
+    <Content Include="images\prettyPhoto\light_rounded\sprite.png" />
+    <Content Include="images\prettyPhoto\light_square\btnNext.png" />
+    <Content Include="images\prettyPhoto\light_square\btnPrevious.png" />
+    <Content Include="images\prettyPhoto\light_square\default_thumbnail.gif" />
+    <Content Include="images\prettyPhoto\light_square\loader.gif" />
+    <Content Include="images\prettyPhoto\light_square\sprite.png" />
+    <Content Include="images\Qompat-favicon 16x16.png" />
+    <Content Include="images\Qompat-favicon.png" />
+    <Content Include="images\qompat-logo.png" />
+    <Content Include="images\QompatLogoSmall.jpg" />
+    <Content Include="images\Q_AME_arrow-RED.png" />
+    <Content Include="images\Q_AME_arrow.png" />
+    <Content Include="images\Q_AME_Google.png" />
+    <Content Include="images\Q_AME_LinkedIn.png" />
+    <Content Include="images\Q_AME_logo_detail.png" />
+    <Content Include="images\Q_AME_logo_home.png" />
+    <Content Include="images\Q_AME_Twitter.png" />
+    <Content Include="images\Q_Arrow_image.png" />
+    <Content Include="images\Q_Arrow_image02.png" />
+    <Content Include="images\Q_Arrow_image1a.png" />
+    <Content Include="images\Q_Arrow_image2.png" />
+    <Content Include="images\Q_CTA-Arrow.png" />
+    <Content Include="images\Q_EmailSig-Logo.jpg" />
+    <Content Include="images\Q_Icon-App-V.png" />
+    <Content Include="images\Q_Icon-SWV.png" />
+    <Content Include="images\Q_Icon-ThinApp.png" />
+    <Content Include="images\Q_Icon-XenApp.png" />
+    <Content Include="images\Q_Number_1.png" />
+    <Content Include="images\Q_Number_2.png" />
+    <Content Include="images\Q_Number_3.png" />
+    <Content Include="images\shutterstock_163337189-100530158-primary.idge.jpg" />
+    <Content Include="images\slide1.jpg" />
+    <Content Include="images\slide2.jpg" />
+    <Content Include="images\slide3.jpg" />
+    <Content Include="images\slider-arrows.png" />
+    <Content Include="images\soft_circles.jpg" />
+    <Content Include="images\tables\1.jpg" />
+    <Content Include="images\tables\2.jpg" />
+    <Content Include="images\tables\3.jpg" />
+    <Content Include="images\tables\4.jpg" />
+    <Content Include="images\team\1.jpg" />
+    <Content Include="images\team\2.jpg" />
+    <Content Include="images\team\3.jpg" />
+    <Content Include="images\team\4.jpg" />
+    <Content Include="images\team\5.jpg" />
+    <Content Include="images\team\6.jpg" />
+    <Content Include="images\team\andrew.jpg" />
+    <Content Include="images\team\chris.jpg" />
+    <Content Include="images\team\darwin.jpg" />
+    <Content Include="images\team\greg.png" />
+    <Content Include="images\testimonial-controls.png" />
+    <Content Include="images\trick-or-treat-on-keyboard-100524953-primary.idge.jpg" />
+    <Content Include="images\up-arrow.png" />
+    <Content Include="images\Update Computer Keyboard.jpg" />
+    <Content Include="images\update\Q_Arrow-small.png" />
+    <Content Include="images\update\Q_Arrow.png" />
+    <Content Include="images\update\Q_Base_Arrow.png" />
+    <Content Include="images\update\Q_Beta_64bit.png" />
+    <Content Include="images\update\Q_Beta_AppV.png" />
+    <Content Include="images\update\Q_Beta_Banner-Blank.jpg" />
+    <Content Include="images\update\Q_Beta_Banner.jpg" />
+    <Content Include="images\update\Q_Beta_IE11.png" />
+    <Content Include="images\update\Q_Beta_MainImg.jpg" />
+    <Content Include="images\update\Q_Beta_Server.png" />
+    <Content Include="images\update\Q_Beta_Symbol.png" />
+    <Content Include="images\update\Q_Beta_Win8.png" />
+    <Content Include="images\update\Q_GooglePlus.png" />
+    <Content Include="images\update\Q_LinkedIn.png" />
+    <Content Include="images\update\Q_Spot_Assess.png" />
+    <Content Include="images\update\Q_Spot_Blank.png" />
+    <Content Include="images\update\Q_Spot_Convert.png" />
+    <Content Include="images\update\Q_Spot_Remediate.png" />
+    <Content Include="images\update\Q_Twitter.png" />
+    <Content Include="images\v5-arrows.png" />
+    <Content Include="images\white-logo.png" />
+    <Content Include="images\work-arrow-hover.png" />
+    <Content Include="images\work-arrow.png" />
+    <Content Include="index.html" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery-1.11.0.min.js" />
+    <Content Include="js\jquery.appear.js" />
+    <Content Include="js\jquery.easing.1.3.js" />
+    <Content Include="js\jquery.fitvids.js" />
+    <Content Include="js\jquery.flexslider.js" />
+    <Content Include="js\jquery.isotope.js" />
+    <Content Include="js\jquery.mb.YTPlayer.js" />
+    <Content Include="js\jquery.parallax-1.1.3.js" />
+    <Content Include="js\jquery.prettyPhoto.js" />
+    <Content Include="js\jquery.slabtext.js" />
+    <Content Include="js\jquery.superslides.js" />
+    <Content Include="js\modernizr-latest.js" />
+    <Content Include="js\plugins.js" />
+    <Content Include="js\promo.js" />
+    <Content Include="js\shortcodes.js" />
+    <Content Include="js\SmoothScroll.js" />
+    <Content Include="js\waypoints.min.js" />
+    <Content Include="projects\project-1.html" />
+    <Content Include="projects\project-2.html" />
+    <Content Include="projects\project-3.html" />
+    <Content Include="projects\project-4.html" />
+    <Content Include="projects\project-5.html" />
+    <Content Include="shortcodes.html" />
+    <Content Include="test.html" />
+    <Content Include="theme-panel\theme-panel.js" />
+    <Content Include="theme-panel\theme_panel.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52658</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52658/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
