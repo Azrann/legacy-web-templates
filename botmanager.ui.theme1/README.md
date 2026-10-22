@@ -1,25 +1,27 @@
+**Languages:** [English](README.md) · [Español](README.es.md)
+
 # botmanager.ui.theme1
 
-Plantilla Coda de panel administrativo en Angular 7, con navegación, layouts, formularios, tablas, gráficos, mapas y ejemplos de interfaz.
+Coda administration dashboard template in Angular 7, with navigation, layouts, forms, tables, charts, maps, and interface examples.
 
-Documentación basada en los archivos locales revisados el 21 de octubre de 2026.
+Documentation based on local files reviewed on 21 October 2026.
 
 <!-- BEGIN project-context -->
 
-## Antigüedad y evidencia
+## Historical dates and evidence
 
-**Año de referencia de esta versión: 2019.** Se toma el archivo de código o configuración más reciente con una fecha histórica recuperable; no se ha podido confirmar la fecha exacta de creación.
+**Reference year for this version: 2019.** This uses the most recent source or configuration file with a recoverable historical date; the exact creation date could not be confirmed.
 
-- Archivo más reciente datable: **2019-04-24**, [`botmanager.ui.theme1/package-lock.json`](package-lock.json); fecha de modificación conservada.
-- Dependencia fechada más reciente entre las comprobadas: [@angular/cli 7.3.8](https://www.npmjs.com/package/@angular/cli/v/7.3.8), publicada el **2019-04-03** (versión fijada en el lockfile), en [`botmanager.ui.theme1/package.json`](package.json). Fecha contrastada con la versión de [`botmanager.ui.theme1/package-lock.json`](package-lock.json).
+- Most recent datable file: **2019-04-24**, [`botmanager.ui.theme1/package-lock.json`](package-lock.json); preserved modification timestamp.
+- Most recently published dependency among those checked: [@angular/cli 7.3.8](https://www.npmjs.com/package/@angular/cli/v/7.3.8), published on **2019-04-03** (version pinned in the lockfile), in [`botmanager.ui.theme1/package.json`](package.json). Cross-checked against the version in [`botmanager.ui.theme1/package-lock.json`](package-lock.json).
 
-La publicación de una dependencia sitúa la configuración conservada a partir de esa versión, si la referencia es válida. Una actualización de paquetes puede ser mucho más reciente que el inicio del proyecto. No se restauraron paquetes para comprobarlo.
+A dependency's publication places the preserved configuration at or after that version, if the reference is valid. Package updates may be much newer than the project's beginnings. Packages were not restored to verify this.
 
-## Por qué merece la pena mirarlo
+## Why this is worth exploring
 
-El catálogo de componentes Coda y sus layouts es la parte útil: permite explorar navegación, tablas, mapas y gráficos antes de incorporarlos a una aplicación. También ayuda a entender de dónde procede la base visual del gestor de bots.
+The useful part is Coda's component catalogue and layouts: you can explore navigation, tables, maps, and charts before integrating them into an application. It also shows the origins of the bot manager's visual foundation.
 
-Puntos de entrada al código:
+Code entry points:
 
 - [`src/app/layout`](src/app/layout/)
 - [`src/app/pages`](src/app/pages/)
@@ -27,42 +29,42 @@ Puntos de entrada al código:
 
 <!-- END project-context -->
 
-## Estructura y responsabilidades
+## Structure and responsibilities
 
-| Ruta | Responsabilidad |
+| Path | Responsibility |
 | --- | --- |
-| `src/app/layout/` | Layout, menú, barra de navegación y componentes del panel. |
-| `src/app/pages/` | Ejemplos de componentes, mapas, tablas, widgets y otras pantallas. |
-| `src/app/services/` | Datos y soporte de las demostraciones. |
-| `src/environments/` | Configuración de entornos. |
-| `angular.json, package.json` | Angular CLI y dependencias del tema. |
+| `src/app/layout/` | Layout, menu, navigation bar, and dashboard components. |
+| `src/app/pages/` | Component examples, maps, tables, widgets, and other screens. |
+| `src/app/services/` | Demonstration data and supporting code. |
+| `src/environments/` | Environment configuration. |
+| `angular.json, package.json` | Angular CLI and theme dependencies. |
 
-## Tecnologías y requisitos
+## Technologies and requirements
 
-Node/npm compatible con Angular 7.1, Angular CLI de esta copia, TypeScript y RxJS 6.3. Incluye Bootstrap, NgRx, Leaflet y componentes de gráficos.
+Node/npm compatible with Angular 7.1, this copy's Angular CLI, TypeScript, and RxJS 6.3. Includes Bootstrap, NgRx, Leaflet, and chart components.
 
-## Preparación y arranque
+## Setup and startup
 
-Preparar un entorno compatible y usar npm start. npm run build compila; los scripts test, lint y e2e también están declarados. Se revisó el código sin ejecutar esos comandos.
+Prepare a compatible environment and use npm start. npm run build compiles the application; test, lint, and e2e scripts are also declared. The code was reviewed without running those commands.
 
-Comandos de preparación, desde esta carpeta, después de revisar la configuración privada:
+Setup commands, run from this folder after reviewing private configuration:
 
 ```text
 npm install
 npm start
 ```
 
-## Configuración e integraciones
+## Configuration and integrations
 
-pages.module.ts contiene una clave Google para los ejemplos de mapas. Revisar entornos y servicios de datos antes de conectar la plantilla a servicios propios.
+pages.module.ts contains a Google key for map examples. Review environments and data services before connecting the template to your own services.
 
-## Estado de esta copia
+## Status of this copy
 
-Comparte estructura y componentes con la biblioteca projects/coda de BotCreator.UI y botmanager.ui. Esta copia es un tema de demostración; no se encontró aquí la gestión de bots del frontend completo. Conservar licencias de la plantilla y recursos de terceros.
+Shares structure and components with the projects/coda library in BotCreator.UI and botmanager.ui. This copy is a demonstration theme; the full frontend's bot management was not found here. Preserve template and third-party resource licenses.
 
-La revisión fue estática: no se restauraron dependencias, no se compiló ni se ejecutaron aplicaciones o pruebas. Los comandos anteriores son instrucciones de preparación, no resultados de validación. Las versiones indicadas son las del código conservado.
+The review was static: dependencies were not restored, and applications and tests were neither built nor run. The commands above are setup instructions, not validation results. Listed versions describe the preserved code.
 
 
-## Copia pública
+## Public copy
 
-Las credenciales originales se han retirado o sustituido por `REPLACE_WITH_YOUR_VALUE`. Los datos locales, sesiones, certificados privados y perfiles de despliegue se omiten. Configurar servicios y credenciales propios antes de ejecutar. La compilación y el funcionamiento con servicios externos no se han validado.
+Original credentials have been removed or replaced with `REPLACE_WITH_YOUR_VALUE`. Local data, sessions, private certificates, and deployment profiles are omitted. Configure your own services and credentials before running. Building and operation with external services have not been validated.

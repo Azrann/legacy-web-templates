@@ -1,35 +1,37 @@
+**Languages:** [English](README.md) · [Español](README.es.md)
+
 # legacy-web-templates
 
-Plantillas web históricas usadas como base de otros proyectos.
+Historical web templates used as foundations for other projects.
 
 <!-- BEGIN project-context -->
 
-## Antigüedad y evidencia
+## Historical dates and evidence
 
-**Año de referencia de esta versión: 2019.** Se toma el archivo de código o configuración más reciente con una fecha histórica recuperable; no se ha podido confirmar la fecha exacta de creación.
+**Reference year for this version: 2019.** This uses the most recent source or configuration file with a recoverable historical date; the exact creation date could not be confirmed.
 
-- Archivo más reciente datable: **2019-04-24**, [`botmanager.ui.theme1/package-lock.json`](botmanager.ui.theme1/package-lock.json); fecha de modificación conservada.
-- Primer registro entre los repositorios Git originales incluidos: **2014-12-14**. Puede corresponder a una importación; no prueba cuándo se escribió por primera vez.
-- Dependencia fechada más reciente entre las comprobadas: [@angular/cli 7.3.8](https://www.npmjs.com/package/@angular/cli/v/7.3.8), publicada el **2019-04-03** (versión fijada en el lockfile), en [`botmanager.ui.theme1/package.json`](botmanager.ui.theme1/package.json). Fecha contrastada con la versión de [`botmanager.ui.theme1/package-lock.json`](botmanager.ui.theme1/package-lock.json).
-- Referencia adicional: destino `v4.5` en [`corporation/corporation.csproj`](corporation/corporation.csproj); su [versión estable se publicó el 2012-08-15](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-framework). Es una pista de generación tecnológica; pudieron existir versiones preliminares anteriores.
+- Most recent datable file: **2019-04-24**, [`botmanager.ui.theme1/package-lock.json`](botmanager.ui.theme1/package-lock.json); preserved modification timestamp.
+- Earliest record among the original Git repositories included: **2014-12-14**. This may be an import and does not establish when the code was first written.
+- Most recently published dependency among those checked: [@angular/cli 7.3.8](https://www.npmjs.com/package/@angular/cli/v/7.3.8), published on **2019-04-03** (version pinned in the lockfile), in [`botmanager.ui.theme1/package.json`](botmanager.ui.theme1/package.json). Cross-checked against the version in [`botmanager.ui.theme1/package-lock.json`](botmanager.ui.theme1/package-lock.json).
+- Additional reference: target `v4.5` in [`corporation/corporation.csproj`](corporation/corporation.csproj); its [stable release was published on 2012-08-15](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-framework). This indicates the technology generation; earlier preview releases may have existed.
 
-La publicación de una dependencia sitúa la configuración conservada a partir de esa versión, si la referencia es válida. Una actualización de paquetes puede ser mucho más reciente que el inicio del proyecto. No se restauraron paquetes para comprobarlo.
+A dependency's publication places the preserved configuration at or after that version, if the reference is valid. Package updates may be much newer than the project's beginnings. Packages were not restored to verify this.
 
-Se descartaron las marcas de tiempo de la copia de octubre de 2026 y los documentos generados durante esta revisión. Las fechas recuperables no garantizan que no existan cambios posteriores sin datar.
+October 2026 copy timestamps and documents generated during this review were excluded. Recoverable dates do not guarantee that there are no later, undated changes.
 
-Años de referencia por componente (archivo más reciente datable):
+Reference years by component (most recent datable file):
 
-| Componente | Año |
+| Component | Year |
 | --- | --- |
 | [`blank`](blank/) | 2018 |
 | [`botmanager.ui.theme1`](botmanager.ui.theme1/) | 2019 |
 | [`corporation`](corporation/) | 2015 |
 
-## Por qué merece la pena mirarlo
+## Why this is worth exploring
 
-Comparar SmartAdmin en Angular 5, Coda en Angular 7 y la plantilla HTML/PHP permite estudiar varias formas de construir paneles y sitios de la época. El interés está en layouts y componentes reutilizables, con sus atribuciones originales.
+Comparing SmartAdmin in Angular 5, Coda in Angular 7, and the HTML/PHP template shows several ways to build dashboards and websites of that period. The interest lies in layouts and reusable components, with their original attribution.
 
-Puntos de entrada al código:
+Code entry points:
 
 - [`blank/src/app/app.routing.ts`](blank/src/app/app.routing.ts)
 - [`botmanager.ui.theme1/src/app/layout`](botmanager.ui.theme1/src/app/layout/)
@@ -37,37 +39,37 @@ Puntos de entrada al código:
 
 <!-- END project-context -->
 
-## Contenido
+## Contents
 
-| Directorio | Función |
+| Directory | Function |
 | --- | --- |
-| [`blank/`](blank/) | Plantilla de interfaz administrativa SmartAdmin basada en Angular 5.0.5, Bootstrap 3 y numerosos componentes de panel de administración. |
-| [`botmanager.ui.theme1/`](botmanager.ui.theme1/) | Plantilla Coda de panel administrativo en Angular 7, con navegación, layouts, formularios, tablas, gráficos, mapas y ejemplos de interfaz. |
-| [`corporation/`](corporation/) | Sitio corporativo con páginas de presentación y proyectos, recursos Bootstrap/jQuery y formularios PHP para correo y newsletter. |
+| [`blank/`](blank/) | SmartAdmin administration interface template based on Angular 5.0.5, Bootstrap 3, and numerous dashboard components. |
+| [`botmanager.ui.theme1/`](botmanager.ui.theme1/) | Coda administration dashboard template in Angular 7, with navigation, layouts, forms, tables, charts, maps, and interface examples. |
+| [`corporation/`](corporation/) | Corporate website with presentation and project pages, Bootstrap/jQuery resources, and PHP email and newsletter forms. |
 
-Los metadatos de blank y botmanager.ui.theme1 declaran MIT. Se conservan los avisos existentes de terceros; no se añade una licencia global sobre materiales ajenos.
+Metadata in blank and botmanager.ui.theme1 declares MIT. Existing third-party notices are retained; no blanket license is added to others' material.
 
-## Requisitos y preparación
+## Requirements and setup
 
-Angular 5/7, HTML, CSS, JavaScript y PHP.
+Angular 5/7, HTML, CSS, JavaScript, and PHP.
 
-Esta es una copia histórica. Consultar los archivos de proyecto y los README de cada componente para sus versiones y dependencias. Restaurar NuGet/npm desde la carpeta correspondiente; las bibliotecas internas pueden necesitar reconstrucción. Preparar las bases de datos y los servicios externos con cuentas propias.
+This is a historical copy. Consult each component's project files and README for versions and dependencies. Restore NuGet/npm from the appropriate folder; internal libraries may need rebuilding. Prepare databases and external services using your own accounts.
 
-Paquetes JavaScript principales:
+Main JavaScript packages:
 
 - `blank/package.json`
 - `botmanager.ui.theme1/package.json`
 
-## Configuración y seguridad
+## Configuration and security
 
-Los secretos originales se han eliminado o sustituido por `REPLACE_WITH_YOUR_VALUE`. Buscar este marcador antes de ejecutar y aportar los valores mediante configuración local o variables de entorno. Las sesiones, claves privadas, certificados de firma, bases de datos, registros, perfiles de despliegue y paquetes binarios no se publican. El `.gitignore` protege estos archivos locales.
+Original secrets have been removed or replaced with `REPLACE_WITH_YOUR_VALUE`. Search for this marker before running and provide values through local configuration or environment variables. Sessions, private keys, signing certificates, databases, logs, deployment profiles, and binary packages are not published. The `.gitignore` protects these local files.
 
-Se publica un historial nuevo: los commits antiguos permanecen únicamente en la copia local original. Los valores de ejemplo no permiten conectarse a los servicios originales.
+A fresh history is published: old commits remain only in the original local copy. Example values cannot connect to the original services.
 
-## Estado de validación
+## Validation status
 
-Se realizó una revisión estática y un escaneo de secretos antes de publicar. No se ejecutaron aplicaciones, operaciones de trading, despliegues ni pruebas que contacten servicios externos. No se garantiza la compilación con herramientas actuales. Algunos proyectos necesitan dependencias históricas y activos que no están incluidos.
+A static review and secret scan were performed before publication. Applications, trading operations, deployments, and tests contacting external services were not run. Building with current tools is not guaranteed. Some projects need historical dependencies and assets that are not included.
 
-## Licencias y procedencia
+## Licenses and provenance
 
-Se conservan las licencias y atribuciones de terceros presentes en el código. No se añade una licencia global a los componentes que no la tenían. Esta importación conserva fuentes locales y no afirma ser una versión actual del proyecto original.
+Third-party licenses and attributions present in the code are retained. No blanket license is added to components that lacked one. This import preserves local sources and does not claim to be a current version of the original project.
